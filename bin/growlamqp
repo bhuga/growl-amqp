@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+
+# i know, its so evil, etc, etc
+require 'rubygems'
+require 'growlamqp'
+
+GrowlAMQP.monitor!
