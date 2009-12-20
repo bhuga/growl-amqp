@@ -2,7 +2,7 @@
 
 $: . unshift(File.expand_path(File.join(File.dirname(__FILE__), '..', 'lib')))
 require 'bert'
-require 'growlamqp'
+require 'growl-amqp'
 
 GrowlAMQP.monitor! do | msg |
   BERT.decode(msg)
