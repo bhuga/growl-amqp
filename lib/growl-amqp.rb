@@ -86,7 +86,7 @@ module GrowlAMQP
     daemons_argv = [opts[:command]]
     
     unless opts[:command] == "stop"
-      puts "Want to save this options?  Use this as a configuration file, and use -f to find it next time."
+      puts "Want to save these options?  Use this as a configuration file, and use -f to find it next time."
       puts YAML.dump(opts.reject { |k, v| [:proc,:command].include? k})
     end
 
