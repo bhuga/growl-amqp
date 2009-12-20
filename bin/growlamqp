@@ -1,7 +1,6 @@
 #!/usr/bin/env ruby
 
-# i know, its so evil, etc, etc
-require 'rubygems'
+$: . unshift(File.expand_path(File.join(File.dirname(__FILE__), '..', 'lib')))
 require 'growlamqp'
 
 GrowlAMQP.monitor!
